@@ -1026,7 +1026,9 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
   inset: 72px var(--pad) auto;
   z-index: 11;
   display: none;
+  max-height: calc(100svh - 88px);
   padding: 18px;
+  overflow-y: auto;
   color: var(--ink);
   background: var(--header-bg-solid);
   border: 1px solid var(--line);
@@ -2702,6 +2704,7 @@ dd {
   }
 
   .mobile-menu-panel {
+    max-height: calc(100svh - 80px);
     display: block;
   }
 
