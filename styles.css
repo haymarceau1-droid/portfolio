@@ -2851,7 +2851,7 @@ dd {
   }
 
   .hero-role {
-    font-size: clamp(30px, 9vw, 46px);
+    font-size: clamp(36px, 11vw, 58px);
   }
 
   .service-grid {
