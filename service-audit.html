@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UX / Website Audit - Marceau Hay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+    <div class="cursor-dot" data-cursor-dot aria-hidden="true"></div>
+    <div class="cursor-ring" data-cursor-ring aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html">Marceau Hay</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#work" data-i18n="nav.work">Work</a>
+        <div class="nav-services" data-mega-menu>
+          <button class="nav-service-trigger" type="button" data-mega-trigger aria-expanded="false" aria-controls="services-menu"><span data-i18n="nav.services">Services</span></button>
+          <div class="mega-menu" id="services-menu" data-mega-panel>
+            <div class="mega-menu-intro"><p class="eyebrow" data-i18n="mega.eyebrow">Services</p><h3 data-i18n="mega.title">Focused digital support from audit to build.</h3><p data-i18n="mega.note">Choose a focused entry point, then scale the work from diagnosis to polished execution.</p></div>
+            <div class="mega-menu-list">
+              <a href="service-audit.html" class="mega-menu-item"><span class="mega-icon material-symbols-rounded" aria-hidden="true">analytics</span><span class="mega-copy"><strong data-i18n="mega.audit.title">UX / Website Audit</strong><small data-i18n="mega.audit.text">Clarity, structure, conversion, UX friction, and actionable recommendations.</small></span></a>
+              <a href="service-design.html" class="mega-menu-item"><span class="mega-icon material-symbols-rounded" aria-hidden="true">design_services</span><span class="mega-copy"><strong data-i18n="mega.design.title">UX/UI & Web Design</strong><small data-i18n="mega.design.text">Wireframes, interfaces, landing pages, visual systems, and refined layouts.</small></span></a>
+              <a href="service-design-development.html" class="mega-menu-item"><span class="mega-icon material-symbols-rounded" aria-hidden="true">code_blocks</span><span class="mega-copy"><strong data-i18n="mega.designbuild.title">Design + Development</strong><small data-i18n="mega.designbuild.text">From design direction to responsive implementation and launch-ready pages.</small></span></a>
+              <a href="service-product-positioning.html" class="mega-menu-item"><span class="mega-icon material-symbols-rounded" aria-hidden="true">conversion_path</span><span class="mega-copy"><strong data-i18n="mega.product.title">Product & Positioning</strong><small data-i18n="mega.product.text">Offer structure, messaging, conversion logic, and digital product thinking.</small></span></a>
+            </div>
+            <a class="mega-feature" href="index.html#contact"><span class="mega-feature-pattern" aria-hidden="true"></span><strong data-i18n="mega.feature.title">Not sure where to start?</strong><small data-i18n="mega.feature.text">Send the context. I can help define the right format before we build.</small></a>
+          </div>
+        </div>
+        <a href="index.html#skills" data-i18n="nav.blog">Comp&eacute;tences</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-meta" aria-label="Location and local time"><span>Angers</span><time data-local-time datetime="">--:--</time></div>
+        <button class="mode-toggle theme-button" type="button" data-theme-toggle aria-label="Switch to night mode"><span class="theme-icon material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span><span data-theme-label>Night</span></button>
+        <div class="lang-toggle" aria-label="Language selection"><button type="button" data-lang="en">EN</button><button class="is-active" type="button" data-lang="fr">FR</button><button type="button" data-lang="es">ES</button></div>
+        <a class="header-cta" href="index.html#contact" data-i18n="nav.cta">Let&rsquo;s talk</a>
+      </div>
+    </header>
+    <a class="availability-banner" href="index.html#contact"><span class="availability-dot" aria-hidden="true"></span><span data-i18n="availability.text">Open to freelance work on your projects</span></a>
+
+    <main class="service-page">
+      <section class="service-hero">
+        <div class="container service-hero-grid">
+          <div>
+            <p class="service-kicker" data-i18n="service.audit.kicker">Service / Audit</p>
+            <h1 data-i18n="service.audit.title">UX and website audit for clearer digital decisions.</h1>
+            <p data-i18n="service.audit.lead">A focused diagnosis of your website or interface, designed to identify friction, sharpen messaging, and define practical improvements before investing in redesign or development.</p>
+            <div class="hero-actions contact-actions">
+              <a class="button button-primary" href="index.html#contact" data-i18n="service.audit.primary">Request an audit</a>
+              <a class="button button-secondary" href="index.html#services" data-i18n="service.common.back">Back to services</a>
+            </div>
+          </div>
+          <aside class="service-summary">
+            <div><span>Best for</span><strong data-i18n="service.audit.best">Existing websites, landing pages, funnels</strong></div>
+            <div><span>Output</span><strong data-i18n="service.audit.output">Prioritized recommendations</strong></div>
+            <div><span>Focus</span><strong data-i18n="service.audit.focus">Clarity, UX, conversion, trust</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-pad section-line">
+        <div class="container service-content-grid">
+          <div class="service-section-title">
+            <p class="eyebrow" data-i18n="service.audit.section1.eyebrow">What I review</p>
+            <h2 data-i18n="service.audit.section1.title">From first impression to final action.</h2>
+          </div>
+          <div class="service-card-grid">
+            <article class="service-detail-card"><h3 data-i18n="service.audit.card1.title">Structure</h3><p data-i18n="service.audit.card1.text">Navigation, section order, content hierarchy, page rhythm, and whether the experience is easy to understand quickly.</p></article>
+            <article class="service-detail-card"><h3 data-i18n="service.audit.card2.title">UX friction</h3><p data-i18n="service.audit.card2.text">Confusing flows, weak affordances, unclear actions, missing states, and details that slow users down.</p></article>
+            <article class="service-detail-card"><h3 data-i18n="service.audit.card3.title">Messaging</h3><p data-i18n="service.audit.card3.text">Positioning, offer clarity, value proposition, credibility signals, and whether the page answers the right questions.</p></article>
+            <article class="service-detail-card"><h3 data-i18n="service.audit.card4.title">Conversion</h3><p data-i18n="service.audit.card4.text">CTA logic, trust moments, layout focus, form friction, and improvements that can move users toward action.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-line">
+        <div class="container service-content-grid">
+          <div class="service-section-title">
+            <p class="eyebrow" data-i18n="service.common.deliverables">Deliverables</p>
+            <h2 data-i18n="service.audit.section2.title">Clear findings, not vague feedback.</h2>
+          </div>
+          <ul class="service-list">
+            <li><span>01</span><span data-i18n="service.audit.item1">Audit summary with key issues and opportunities</span></li>
+            <li><span>02</span><span data-i18n="service.audit.item2">Prioritized recommendations by impact and effort</span></li>
+            <li><span>03</span><span data-i18n="service.audit.item3">UX, messaging, and visual hierarchy notes</span></li>
+            <li><span>04</span><span data-i18n="service.audit.item4">Next-step roadmap for design or implementation</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service-page-cta">
+        <div class="container">
+          <h2 data-i18n="service.audit.cta.title">Need a sharper view of what is holding your website back?</h2>
+          <p data-i18n="service.audit.cta.text">Send me the page, the context, and what you want it to achieve. I&rsquo;ll help identify where clarity and performance can improve.</p>
+          <div class="hero-actions contact-actions">
+            <a class="button button-primary" href="mailto:hello@marceauhay.com" data-i18n="service.common.contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-marquee" aria-hidden="true">Marceau Hay</div>
+      <div class="container footer-inner"><p>Marceau Hay</p><p>marceauhay.com</p><p>&copy; 2026</p></div>
+    </footer>
+    <a class="back-to-top" href="#" data-back-to-top aria-label="Back to top"><span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span></a>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "title": "Designing sharper landing pages",
+      "excerpt": "Notes on structure, hierarchy, messaging, and the details that make a landing page feel clear rather than noisy.",
+      "category": "Web Design",
+      "date": "2026-05-18",
+      "readTime": "4 min read",
+      "url": "#contact",
+      "translations": {
+        "fr": {
+          "title": "Concevoir des landing pages plus nettes",
+          "excerpt": "Notes sur la structure, la hiérarchie, le message et les détails qui rendent une landing page claire plutôt que bruyante.",
+          "category": "Web design",
+          "readTime": "4 min de lecture"
+        },
+        "es": {
+          "title": "Dise&ntilde;ar landing pages mas precisas",
+          "excerpt": "Notas sobre estructura, jerarquia, mensaje y detalles que hacen que una landing page se sienta clara en lugar de ruidosa.",
+          "category": "Dise&ntilde;o web",
+          "readTime": "4 min de lectura"
+        }
+      }
+    },
+    {
+      "title": "From visual taste to usable interfaces",
+      "excerpt": "How strong visual direction becomes more valuable when it is supported by flows, states, constraints, and real user intent.",
+      "category": "UX/UI",
+      "date": "2026-05-18",
+      "readTime": "5 min read",
+      "url": "#contact",
+      "translations": {
+        "fr": {
+          "title": "Du goût visuel aux interfaces utilisables",
+          "excerpt": "Comment une direction visuelle forte devient plus utile lorsqu'elle s'appuie sur des parcours, des états, des contraintes et une intention utilisateur réelle.",
+          "category": "UX/UI",
+          "readTime": "5 min de lecture"
+        },
+        "es": {
+          "title": "Del criterio visual a interfaces usables",
+          "excerpt": "Como una direccion visual fuerte gana valor cuando se apoya en flujos, estados, restricciones e intencion real del usuario.",
+          "category": "UX/UI",
+          "readTime": "5 min de lectura"
+        }
+      }
+    },
+    {
+      "title": "Why designers should understand implementation",
+      "excerpt": "A practical look at how HTML, CSS, responsiveness, and technical constraints improve design decisions before handoff.",
+      "category": "Development",
+      "date": "2026-05-18",
+      "readTime": "3 min read",
+      "url": "#contact",
+      "translations": {
+        "fr": {
+          "title": "Pourquoi les designers devraient comprendre l'intégration",
+          "excerpt": "Un regard pratique sur la manière dont HTML, CSS, le responsive et les contraintes techniques améliorent les décisions de design avant le handoff.",
+          "category": "Développement",
+          "readTime": "3 min de lecture"
+        },
+        "es": {
+          "title": "Por que los dise&ntilde;adores deberian entender la implementacion",
+          "excerpt": "Una mirada practica a como HTML, CSS, el responsive y las restricciones tecnicas mejoran las decisiones de dise&ntilde;o antes del handoff.",
+          "category": "Desarrollo",
+          "readTime": "3 min de lectura"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marceau Hay est concepteur UX/UI, concepteur web et développeur web basé en France."
+    />
+    <title>Marceau Hay - Concepteur UX/UI & Concepteur Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-loader" data-loader aria-hidden="true">
+      <div class="loader-inner">
+        <span class="loader-name">Marceau Hay</span>
+        <div class="loader-progress" aria-hidden="true">
+          <div class="loader-progress-track"><span data-loader-progress></span></div>
+          <span class="loader-percent" data-loader-percent>0</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true">
+      <span data-scroll-progress></span>
+    </div>
+    <div class="cursor-dot" data-cursor-dot aria-hidden="true"></div>
+    <div class="cursor-ring" data-cursor-ring aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Marceau Hay home">Marceau Hay</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <div class="nav-services" data-mega-menu>
+          <button class="nav-service-trigger" type="button" data-mega-trigger aria-expanded="false" aria-controls="services-menu">
+            <span data-i18n="nav.services">Services</span>
+          </button>
+          <div class="mega-menu" id="services-menu" data-mega-panel>
+            <div class="mega-menu-intro">
+              <p class="eyebrow" data-i18n="mega.eyebrow">Services</p>
+              <h3 data-i18n="mega.title">Focused digital support from audit to build.</h3>
+              <p data-i18n="mega.note">Choose a focused entry point, then scale the work from diagnosis to polished execution.</p>
+            </div>
+            <div class="mega-menu-list">
+              <a href="service-audit.html" class="mega-menu-item">
+                <span class="mega-icon material-symbols-rounded" aria-hidden="true">analytics</span>
+                <span class="mega-copy">
+                  <strong data-i18n="mega.audit.title">UX / Website Audit</strong>
+                  <small data-i18n="mega.audit.text">Clarity, structure, conversion, UX friction, and actionable recommendations.</small>
+                </span>
+              </a>
+              <a href="service-design.html" class="mega-menu-item">
+                <span class="mega-icon material-symbols-rounded" aria-hidden="true">design_services</span>
+                <span class="mega-copy">
+                  <strong data-i18n="mega.design.title">UX/UI & Web Design</strong>
+                  <small data-i18n="mega.design.text">Wireframes, interfaces, landing pages, visual systems, and refined layouts.</small>
+                </span>
+              </a>
+              <a href="service-design-development.html" class="mega-menu-item">
+                <span class="mega-icon material-symbols-rounded" aria-hidden="true">code_blocks</span>
+                <span class="mega-copy">
+                  <strong data-i18n="mega.designbuild.title">Design + Development</strong>
+                  <small data-i18n="mega.designbuild.text">From design direction to responsive implementation and launch-ready pages.</small>
+                </span>
+              </a>
+              <a href="service-product-positioning.html" class="mega-menu-item">
+                <span class="mega-icon material-symbols-rounded" aria-hidden="true">conversion_path</span>
+                <span class="mega-copy">
+                  <strong data-i18n="mega.product.title">Product & Positioning</strong>
+                  <small data-i18n="mega.product.text">Offer structure, messaging, conversion logic, and digital product thinking.</small>
+                </span>
+              </a>
+            </div>
+            <a class="mega-feature" href="#contact">
+              <span class="mega-feature-pattern" aria-hidden="true"></span>
+              <strong data-i18n="mega.feature.title">Not sure where to start?</strong>
+              <small data-i18n="mega.feature.text">Send the context. I can help define the right format before we build.</small>
+            </a>
+          </div>
+        </div>
+        <a href="#skills" data-i18n="nav.blog">Comp&eacute;tences</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-meta" aria-label="Location and local time">
+          <span>Angers</span>
+          <time data-local-time datetime="">--:--</time>
+        </div>
+        <button class="mode-toggle theme-button" type="button" data-theme-toggle aria-label="Switch to night mode">
+          <span class="theme-icon material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+          <span data-theme-label>Night</span>
+        </button>
+        <div class="lang-toggle" aria-label="Language selection">
+          <button type="button" data-lang="en">EN</button>
+          <button class="is-active" type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a class="header-cta" href="#contact" data-i18n="nav.cta">Let&rsquo;s talk</a>
+      </div>
+    </header>
+    <a class="availability-banner" href="#contact">
+      <span class="availability-dot" aria-hidden="true"></span>
+      <span data-i18n="availability.text">Open to freelance work on your projects</span>
+    </a>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <h1>Marceau Hay</h1>
+            <p class="hero-role" data-i18n="hero.role">Concepteur UX/UI, Concepteur Web & Développeur Web</p>
+            <p class="hero-text">
+              <span data-i18n="hero.text">I design and develop interfaces, websites, and digital experiences that feel clear,
+              useful, and intentional. Between UX, visual design, product thinking, and web development,
+              I like turning ideas into concrete digital experiences.</span>
+            </p>
+            <div class="hero-actions" aria-label="Hero actions">
+              <a class="button button-primary" href="#work" data-i18n="hero.primary">View work</a>
+              <a class="button button-secondary" href="#contact" data-i18n="hero.secondary">Contact me</a>
+            </div>
+          </div>
+          <aside class="hero-panel reveal" aria-label="Credibility">
+            <div class="panel-line"></div>
+            <p class="france-line"><span class="france-flag" aria-hidden="true"></span><span data-i18n="hero.based">Based in France</span></p>
+            <p data-i18n="hero.scope">Working across UX, websites, and digital products</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-pad section-line" id="work">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
+            <h2 data-i18n="work.title">Interfaces, websites, and digital products shaped with restraint.</h2>
+          </div>
+
+          <div class="work-list">
+            <article class="project reveal">
+              <div class="project-visual">
+                <div class="browser-mockup">
+                  <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-screen">
+                    <img src="ifeap.PNG" alt="IFEAP website screenshot" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <p class="project-index">01</p>
+                <h3>IFEAP</h3>
+                <p class="project-subtitle" data-i18n="project.ifeap.title">UX/UI redesign, WordPress development, Dendreo integration</p>
+                <p class="project-description" data-i18n="project.ifeap.desc">For IFEAP, an organization dedicated to training, support, and consulting, I handled the complete website redesign: clearer UX, a more modern interface, WordPress development, and Dendreo integration for training management.</p>
+                <dl>
+                  <div><dt data-i18n="label.role">Role</dt><dd data-i18n="project.ifeap.role">UX/UI / WordPress / Dendreo</dd></div>
+                  <div><dt data-i18n="label.category">Category</dt><dd data-i18n="project.ifeap.category">Training organization website</dd></div>
+                </dl>
+                <ul class="project-missions">
+                  <li data-i18n="project.ifeap.m1">UX/UI design</li>
+                  <li data-i18n="project.ifeap.m2">Global redesign</li>
+                  <li data-i18n="project.ifeap.m3">WordPress development</li>
+                  <li data-i18n="project.ifeap.m4">Dendreo integration</li>
+                  <li data-i18n="project.ifeap.m5">Custom WordPress plugins</li>
+                </ul>
+                <a href="https://ifeap.fr/" class="case-link" target="_blank" rel="noreferrer" data-i18n="project.visit">View live site</a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-visual">
+                <div class="browser-mockup">
+                  <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-screen">
+                    <img src="aterlierdestempliers.PNG" alt="L'Atelier des Templiers website screenshot" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <p class="project-index">02</p>
+                <h3>L&rsquo;Atelier des Templiers</h3>
+                <p class="project-subtitle" data-i18n="project.templiers.title">Showcase website for an artisan</p>
+                <p class="project-description" data-i18n="project.templiers.desc">Creation of a showcase website for L&rsquo;Atelier des Templiers, with a direction focused on craft, clarity, and credibility. The work covered visual design, content structure, and responsive integration.</p>
+                <dl>
+                  <div><dt data-i18n="label.role">Role</dt><dd data-i18n="project.templiers.role">Interface design / Web integration</dd></div>
+                  <div><dt data-i18n="label.category">Category</dt><dd data-i18n="project.templiers.category">Artisan showcase website</dd></div>
+                </dl>
+                <ul class="project-missions">
+                  <li data-i18n="project.templiers.m1">Interface design</li>
+                  <li data-i18n="project.templiers.m2">Web integration</li>
+                  <li data-i18n="project.templiers.m3">Craft activity presentation</li>
+                  <li data-i18n="project.templiers.m4">Responsive showcase website</li>
+                </ul>
+                <a href="https://latelier-des-templiers.com/" class="case-link" target="_blank" rel="noreferrer" data-i18n="project.visit">View live site</a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-visual">
+                <div class="browser-mockup">
+                  <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-screen">
+                    <img src="noriadusoleil.PNG" alt="Noria du Soleil ecommerce website screenshot" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <p class="project-index">03</p>
+                <h3>Noria du Soleil</h3>
+                <p class="project-subtitle" data-i18n="project.noria.title">WooCommerce ecommerce redesign</p>
+                <p class="project-description" data-i18n="project.noria.desc">For Noria du Soleil, I worked on the redesign and integration of a WooCommerce ecommerce website. The goal was to create an elegant, immersive, and functional online store for perfume collections, key products, and the brand universe.</p>
+                <dl>
+                  <div><dt data-i18n="label.role">Role</dt><dd data-i18n="project.noria.role">WooCommerce / Ecommerce design</dd></div>
+                  <div><dt data-i18n="label.category">Category</dt><dd data-i18n="project.noria.category">Perfume ecommerce</dd></div>
+                </dl>
+                <ul class="project-missions">
+                  <li data-i18n="project.noria.m1">Web redesign</li>
+                  <li data-i18n="project.noria.m2">WooCommerce integration</li>
+                  <li data-i18n="project.noria.m3">Shopping experience optimization</li>
+                  <li data-i18n="project.noria.m4">Product page structure</li>
+                  <li data-i18n="project.noria.m5">Ecommerce design</li>
+                </ul>
+                <a href="https://noriadusoleil.com/" class="case-link" target="_blank" rel="noreferrer" data-i18n="project.visit">View live site</a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-visual">
+                <div class="browser-mockup">
+                  <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-screen">
+                    <img src="talaria.PNG" alt="Talaria landing page screenshot" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <p class="project-index">04</p>
+                <h3>Talaria</h3>
+                <p class="project-subtitle" data-i18n="project.talaria.title">Landing page and mobile app design</p>
+                <p class="project-description" data-i18n="project.talaria.desc">Talaria is an app designed to simplify group travel organization: planning, shared budget, activity choices, and comparison of flights, stays, and experiences. I worked on the landing page and mobile app interface with a modern, product-oriented visual direction.</p>
+                <dl>
+                  <div><dt data-i18n="label.role">Role</dt><dd data-i18n="project.talaria.role">UX/UI / Landing page / Mobile app</dd></div>
+                  <div><dt data-i18n="label.category">Category</dt><dd data-i18n="project.talaria.category">Collaborative travel product</dd></div>
+                </dl>
+                <ul class="project-missions">
+                  <li data-i18n="project.talaria.m1">UX/UI design</li>
+                  <li data-i18n="project.talaria.m2">Landing page</li>
+                  <li data-i18n="project.talaria.m3">Mobile app design</li>
+                  <li data-i18n="project.talaria.m4">Clear UX for a collaborative digital product</li>
+                </ul>
+                <a href="https://talaria.world/" class="case-link" target="_blank" rel="noreferrer" data-i18n="project.visit">View live site</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="about">
+        <div class="container text-section">
+          <p class="eyebrow reveal" data-i18n="about.eyebrow">About</p>
+          <div class="copy-stack reveal">
+            <p data-i18n="about.p1">
+              I&rsquo;m Marceau Hay, a French UX/UI creator and web creator currently
+              completing a master&rsquo;s degree in UX/UI after earning a bachelor&rsquo;s degree
+              in web design. I work at the intersection of interface design, digital
+              clarity, and execution. What I enjoy most is shaping ideas into
+              experiences that are both aesthetically strong and strategically useful.
+            </p>
+            <p data-i18n="about.p2">
+              My background combines freelance work, design studies, web development,
+              and entrepreneurial projects. This hybrid approach helps me think beyond
+              visuals alone, from structure and messaging to user experience and final
+              implementation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-line services-band" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="services.eyebrow">What I do</p>
+            <h2 data-i18n="services.title">Clear digital work from structure to execution.</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service reveal">
+              <span class="content-icon material-symbols-rounded" aria-hidden="true">architecture</span>
+              <h3 data-i18n="services.ux.title">UX/UI Design</h3>
+              <p data-i18n="services.ux">User flows, structure, wireframes, interface systems, user experience.</p>
+            </article>
+            <article class="service reveal">
+              <span class="content-icon material-symbols-rounded" aria-hidden="true">web</span>
+              <h3 data-i18n="services.web.title">Web Design</h3>
+              <p data-i18n="services.web">Landing pages, showcase websites, high-conversion layouts.</p>
+            </article>
+            <article class="service reveal">
+              <span class="content-icon material-symbols-rounded" aria-hidden="true">code_blocks</span>
+              <h3 data-i18n="services.build.title">Build</h3>
+              <p data-i18n="services.build">WordPress, Elementor, custom HTML/CSS integration, production-ready pages.</p>
+            </article>
+            <article class="service reveal">
+              <span class="content-icon material-symbols-rounded" aria-hidden="true">conversion_path</span>
+              <h3 data-i18n="services.product.title">Product Thinking</h3>
+              <p data-i18n="services.product">Offer design, positioning, conversion logic, digital business ideas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container background-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="background.eyebrow">Background</p>
+            <h2 data-i18n="background.title">A compact path across design, web, and independent creation.</h2>
+          </div>
+          <ol class="timeline reveal">
+            <li><span class="list-icon material-symbols-rounded" aria-hidden="true">school</span><span data-i18n="background.item1">Master&rsquo;s degree in UX/UI design</span></li>
+            <li><span class="list-icon material-symbols-rounded" aria-hidden="true">design_services</span><span data-i18n="background.item2">Bachelor&rsquo;s degree in web design</span></li>
+            <li><span class="list-icon material-symbols-rounded" aria-hidden="true">work_history</span><span data-i18n="background.item3">3 years of apprenticeship / alternating work-study</span></li>
+            <li><span class="list-icon material-symbols-rounded" aria-hidden="true">workspaces</span><span data-i18n="background.item4">Freelance projects across multiple sectors</span></li>
+            <li><span class="list-icon material-symbols-rounded" aria-hidden="true">experiment</span><span data-i18n="background.item5">Independent digital product exploration</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-pad section-line" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Comp&eacute;tences</p>
+            <h2 data-i18n="skills.title">Un socle complet entre design produit, web et int&eacute;gration.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">person_search</span><span>UX research</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">account_tree</span><span>User flows</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">draw</span><span>Wireframing</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">web_asset</span><span>UI design</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">dashboard_customize</span><span>Design systems</span></article>
+            <article class="skill-card reveal"><span class="skill-logo" aria-hidden="true">Fi</span><span>Figma</span></article>
+            <article class="skill-card reveal"><span class="skill-logo" aria-hidden="true">Fr</span><span>Framer</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">responsive_layout</span><span>Responsive web design</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">view_quilt</span><span>Landing pages</span></article>
+            <article class="skill-card reveal"><span class="skill-logo" aria-hidden="true">W</span><span>WordPress</span></article>
+            <article class="skill-card reveal"><span class="skill-logo" aria-hidden="true">E</span><span>Elementor / Elementor Pro</span></article>
+            <article class="skill-card reveal"><span class="skill-logo" aria-hidden="true">JS</span><span>HTML / CSS / JavaScript</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">code_blocks</span><span>Custom code integration</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">api</span><span>Gestion API</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">smart_toy</span><span>IA IDE</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">travel_explore</span><span>SEO basics</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">conversion_path</span><span>Conversion-oriented design</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">psychology</span><span>Product thinking</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">handyman</span><span>Web maintenance</span></article>
+            <article class="skill-card reveal"><span class="skill-icon material-symbols-rounded" aria-hidden="true">subject</span><span>Content structuring</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-line" id="faq">
+        <div class="container faq-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+            <h2 data-i18n="faq.title">A few direct answers before we talk.</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary data-i18n="faq.q1">What kind of projects do you work on?</summary>
+              <p data-i18n="faq.a1">I work on UX/UI design, landing pages, showcase websites, digital products, and product-oriented web experiences.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary data-i18n="faq.q2">Can you design and build the same project?</summary>
+              <p data-i18n="faq.a2">Yes. Depending on the scope, I can work from structure and interface design through to WordPress, Elementor, or custom HTML/CSS implementation.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary data-i18n="faq.q3">Do you work with freelance clients?</summary>
+              <p data-i18n="faq.a3">Yes. I work with local businesses, independent founders, agencies, and collaborators who need clear, polished digital execution.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary data-i18n="faq.q4">Where are you based?</summary>
+              <p data-i18n="faq.a4">I am based in Angers, France, and can collaborate remotely on projects in France and abroad.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Let&rsquo;s build something clear and ambitious.</h2>
+            <p data-i18n="contact.text">
+              Whether you need a digital creator, a freelance collaborator, or someone who
+              can shape and execute a digital experience from idea to interface, I&rsquo;d be
+              happy to connect.
+            </p>
+            <div class="hero-actions contact-actions">
+              <a class="button button-primary" href="mailto:hello@marceauhay.com" data-i18n="contact.primary">Get in touch</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/marceauhay/" target="_blank" rel="noreferrer" data-i18n="contact.secondary">View LinkedIn</a>
+            </div>
+          </div>
+          <address class="contact-details reveal">
+            <div class="contact-profile">
+              <figure class="contact-avatar" aria-label="Portrait of Marceau Hay">
+                <img
+                  src="Marceau_HAY_d%C3%A9tour%C3%A9e2%201.png"
+                  alt="Marceau Hay"
+                  width="100"
+                  height="100"
+                />
+              </figure>
+              <div class="contact-profile-copy">
+                <strong>Marceau Hay</strong>
+                <p>Concepteur UX/UI & Développeur Web</p>
+              </div>
+            </div>
+            <div>
+              <span><span class="contact-icon material-symbols-rounded" aria-hidden="true">mail</span><span data-i18n="contact.email">Email</span></span>
+              <a href="mailto:hello@marceauhay.com">hello@marceauhay.com</a>
+            </div>
+            <div>
+              <span><span class="contact-icon material-symbols-rounded" aria-hidden="true">link</span><span>LinkedIn</span></span>
+              <a href="https://www.linkedin.com/in/marceauhay/" target="_blank" rel="noreferrer">linkedin.com/in/marceauhay</a>
+            </div>
+            <div>
+              <span><span class="contact-icon material-symbols-rounded" aria-hidden="true">location_on</span><span data-i18n="contact.location">Location</span></span>
+              <p class="france-line"><span class="france-flag" aria-hidden="true"></span><span data-i18n="contact.france">France</span></p>
+            </div>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-marquee" aria-hidden="true">Marceau Hay</div>
+      <div class="container footer-inner">
+        <p>Marceau Hay</p>
+        <p>marceauhay.com</p>
+        <p>&copy; 2026</p>
+      </div>
+    </footer>
+
+    <a class="back-to-top" href="#top" data-back-to-top aria-label="Back to top">
+      <span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span>
+    </a>
+
+    <section class="cookie-banner" data-cookie-banner aria-label="Cookie consent" hidden>
+      <div class="cookie-copy">
+        <span class="cookie-icon material-symbols-rounded" aria-hidden="true">cookie</span>
+        <div>
+          <h2 data-i18n="cookies.title">Cookies</h2>
+          <p data-i18n="cookies.text">Ce site utilise uniquement des cookies essentiels et des préférences locales pour mémoriser la langue et le thème.</p>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-button cookie-secondary" type="button" data-cookie-decline data-i18n="cookies.decline">Refuser</button>
+        <button class="cookie-button cookie-primary" type="button" data-cookie-accept data-i18n="cookies.accept">Accepter</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
