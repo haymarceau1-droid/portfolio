@@ -18,10 +18,47 @@ const cookieBanner = document.querySelector("[data-cookie-banner]");
 const cookieAccept = document.querySelector("[data-cookie-accept]");
 const cookieDecline = document.querySelector("[data-cookie-decline]");
 const isHomePage = Boolean(document.querySelector("#work"));
+const writeTitleNodes = document.querySelectorAll("[data-write-title]");
 
 if (loader) {
   document.body.classList.add("is-loading");
 }
+
+const prepareWriteTitleAnimations = () => {
+  writeTitleNodes.forEach((node) => {
+    if (node.dataset.writeTitleReady === "true") {
+      return;
+    }
+
+    const title = node.textContent.trim();
+    const fragment = document.createDocumentFragment();
+
+    node.setAttribute("aria-label", title);
+    node.dataset.writeTitleReady = "true";
+    node.textContent = "";
+
+    [...title].forEach((char, index) => {
+      const charNode = document.createElement("span");
+      charNode.className = "write-title-char";
+      charNode.setAttribute("aria-hidden", "true");
+      charNode.style.setProperty("--char-index", index);
+      charNode.textContent = char === " " ? "\u00a0" : char;
+      fragment.append(charNode);
+    });
+
+    node.append(fragment);
+  });
+};
+
+const playWriteTitleAnimations = () => {
+  if (!writeTitleNodes.length) {
+    return;
+  }
+
+  document.body.classList.add("is-write-title-ready");
+};
+
+prepareWriteTitleAnimations();
 
 const fallbackPosts = [
   {
@@ -1327,6 +1364,8 @@ if (loader) {
     window.setTimeout(() => {
       document.body.classList.remove("is-loading");
       document.body.classList.add("is-loaded");
+
+      window.setTimeout(playWriteTitleAnimations, 920);
     }, 360);
   };
 
@@ -1338,4 +1377,6 @@ if (loader) {
   } else {
     window.addEventListener("load", hideLoader, { once: true });
   }
+} else {
+  playWriteTitleAnimations();
 }
