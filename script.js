@@ -13,7 +13,6 @@ const cursorRing = document.querySelector("[data-cursor-ring]");
 const localTime = document.querySelector("[data-local-time]");
 const megaMenu = document.querySelector("[data-mega-menu]");
 const megaTrigger = document.querySelector("[data-mega-trigger]");
-const blogPostsContainer = document.querySelector("[data-blog-posts]");
 const cookieBanner = document.querySelector("[data-cookie-banner]");
 const cookieAccept = document.querySelector("[data-cookie-accept]");
 const cookieDecline = document.querySelector("[data-cookie-decline]");
@@ -60,75 +59,6 @@ const playWriteTitleAnimations = () => {
 
 prepareWriteTitleAnimations();
 
-const fallbackPosts = [
-  {
-    title: "Designing sharper landing pages",
-    excerpt: "Notes on structure, hierarchy, messaging, and the details that make a landing page feel clear rather than noisy.",
-    category: "Web Design",
-    date: "2026-05-18",
-    readTime: "4 min read",
-    url: "#contact",
-    translations: {
-      fr: {
-        title: "Concevoir des landing pages plus nettes",
-        excerpt: "Notes sur la structure, la hiérarchie, le message et les détails qui rendent une landing page claire plutôt que bruyante.",
-        category: "Web Design",
-        readTime: "4 min de lecture"
-      },
-      es: {
-        title: "Dise&ntilde;ar landing pages mas claras",
-        excerpt: "Notas sobre estructura, jerarquia, mensaje y detalles que hacen que una landing page se sienta clara en lugar de ruidosa.",
-        category: "Dise&ntilde;o Web",
-        readTime: "4 min de lectura"
-      }
-    }
-  },
-  {
-    title: "From visual taste to usable interfaces",
-    excerpt: "How strong visual direction becomes more valuable when it is supported by flows, states, constraints, and real user intent.",
-    category: "UX/UI",
-    date: "2026-05-18",
-    readTime: "5 min read",
-    url: "#contact",
-    translations: {
-      fr: {
-        title: "Du goût visuel aux interfaces utiles",
-        excerpt: "Comment une direction visuelle forte devient plus utile lorsqu&rsquo;elle s&rsquo;appuie sur des parcours, des états, des contraintes et une intention utilisateur claire.",
-        category: "UX/UI",
-        readTime: "5 min de lecture"
-      },
-      es: {
-        title: "Del criterio visual a interfaces utiles",
-        excerpt: "Como una direccion visual fuerte gana valor cuando se apoya en flujos, estados, restricciones e intencion real de usuario.",
-        category: "UX/UI",
-        readTime: "5 min de lectura"
-      }
-    }
-  },
-  {
-    title: "Why designers should understand implementation",
-    excerpt: "A practical look at how HTML, CSS, responsiveness, and technical constraints improve design decisions before handoff.",
-    category: "Development",
-    date: "2026-05-18",
-    readTime: "3 min read",
-    url: "#contact",
-    translations: {
-      fr: {
-        title: "Pourquoi les designers devraient comprendre l&rsquo;implémentation",
-        excerpt: "Un regard pratique sur la manière dont HTML, CSS, le responsive et les contraintes techniques améliorent les décisions de design.",
-        category: "Développement",
-        readTime: "3 min de lecture"
-      },
-      es: {
-        title: "Por que los dise&ntilde;adores deberian entender la implementacion",
-        excerpt: "Una mirada practica a como HTML, CSS, responsive y restricciones tecnicas mejoran las decisiones de dise&ntilde;o.",
-        category: "Desarrollo",
-        readTime: "3 min de lectura"
-      }
-    }
-  }
-];
-let currentBlogPosts = fallbackPosts;
 
 const translations = {
   en: {
@@ -146,7 +76,7 @@ const translations = {
     "cookies.accept": "Accept",
     "cookies.decline": "Decline",
     "availability.text": "Open to freelance work on your projects",
-    "hero.role": "UX/UI Creator, Web Creator & Web Developer",
+    "hero.role": "I design and develop web projects built to be clear, useful, and durable.",
     "hero.text": "I design and develop interfaces, websites, and digital experiences that feel clear, useful, and intentional. Between UX, visual design, product thinking, and web development, I like turning ideas into concrete digital experiences.",
     "hero.primary": "View work",
     "hero.secondary": "Contact me",
@@ -375,7 +305,7 @@ const translations = {
     "cookies.accept": "Accepter",
     "cookies.decline": "Refuser",
     "availability.text": "Disponible en freelance pour vos projets",
-    "hero.role": "Concepteur UX/UI, Concepteur Web & Développeur Web",
+    "hero.role": "Je con&ccedil;ois et d&eacute;veloppe des projets web pens&eacute;s pour &ecirc;tre clairs, utiles et durables.",
     "hero.text": "Je conçois et développe des interfaces, des sites web et des expériences digitales simples à comprendre, agréables à utiliser et construites avec intention. Mon terrain de jeu se situe entre UX, direction visuelle, stratégie produit et développement web.",
     "hero.primary": "Voir les projets",
     "hero.secondary": "Me contacter",
@@ -604,7 +534,7 @@ const translations = {
     "cookies.accept": "Aceptar",
     "cookies.decline": "Rechazar",
     "availability.text": "Disponible como freelance para tus proyectos",
-    "hero.role": "Dise&ntilde;ador UX/UI, Dise&ntilde;ador Web y Desarrollador Web",
+    "hero.role": "Dise&ntilde;o y desarrollo proyectos web pensados para ser claros, utiles y duraderos.",
     "hero.text": "Dise&ntilde;o y desarrollo interfaces, sitios web y experiencias digitales faciles de entender, agradables de usar y construidas con intencion. Trabajo entre UX, direccion visual, criterio de producto y desarrollo web.",
     "hero.primary": "Ver trabajos",
     "hero.secondary": "Contactarme",
@@ -846,77 +776,6 @@ const getActiveDictionary = () => {
   return translations[document.documentElement.lang] || translations.en;
 };
 
-const formatPostDate = (dateValue) => {
-  if (!dateValue) {
-    return "";
-  }
-
-  return new Intl.DateTimeFormat(document.documentElement.lang || "en", {
-    year: "numeric",
-    month: "short",
-    day: "2-digit"
-  }).format(new Date(dateValue));
-};
-
-const getLocalizedPost = (post) => {
-  const lang = document.documentElement.lang || "en";
-  const localized = post.translations?.[lang] || {};
-
-  return {
-    ...post,
-    ...localized
-  };
-};
-
-const renderBlogPosts = (posts) => {
-  if (!blogPostsContainer) {
-    return;
-  }
-
-  currentBlogPosts = posts;
-  const dictionary = getActiveDictionary();
-
-  blogPostsContainer.innerHTML = posts
-    .map((post) => {
-      const localizedPost = getLocalizedPost(post);
-
-      return `
-        <article class="blog-card reveal" data-motion="scale">
-          <div>
-            <span class="blog-card-icon material-symbols-rounded" aria-hidden="true">article</span>
-            <div class="blog-card-meta">
-              <span>${localizedPost.category}</span>
-              <span>${formatPostDate(localizedPost.date)}</span>
-              <span>${localizedPost.readTime}</span>
-            </div>
-            <h3>${localizedPost.title}</h3>
-            <p>${localizedPost.excerpt}</p>
-          </div>
-          <a class="blog-card-link" href="${localizedPost.url}" data-blog-link>${dictionary["blog.read"]}</a>
-        </article>
-      `;
-    })
-    .join("");
-
-  document.querySelectorAll(".blog-card.reveal").forEach((item) => {
-    item.classList.add("is-visible");
-  });
-};
-
-const loadBlogPosts = async () => {
-  try {
-    const response = await fetch("cms/posts.json", { cache: "no-store" });
-
-    if (!response.ok) {
-      throw new Error("Unable to load posts");
-    }
-
-    const data = await response.json();
-    renderBlogPosts(Array.isArray(data) ? data : data.posts);
-  } catch {
-    renderBlogPosts(fallbackPosts);
-  }
-};
 
 const applyLanguage = (lang) => {
   const dictionary = translations[lang] || translations.en;
@@ -935,7 +794,6 @@ const applyLanguage = (lang) => {
   });
 
   updateThemeLabel();
-  renderBlogPosts(currentBlogPosts);
   setStoredPreference("portfolio-language", lang);
 };
 
@@ -1226,7 +1084,6 @@ if ("IntersectionObserver" in window) {
 setupMobileMenu();
 applyTheme(getStoredPreference("portfolio-theme", "light"));
 applyLanguage(getStoredPreference("portfolio-language", "fr"));
-loadBlogPosts();
 
 const canUseCustomCursor =
   window.matchMedia("(pointer: fine)").matches &&

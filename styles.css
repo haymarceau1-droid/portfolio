@@ -1330,7 +1330,7 @@ body.is-write-title-ready .write-title-char {
   margin-top: clamp(18px, 3vw, 34px);
   color: var(--charcoal);
   font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
-  font-size: clamp(42px, 7vw, 96px);
+  font-size: clamp(30px, 4.8vw, 68px);
   font-weight: 500;
   line-height: 0.96;
   letter-spacing: -0.02em;
@@ -2851,7 +2851,7 @@ dd {
   }
 
   .hero-role {
-    font-size: clamp(40px, 12vw, 64px);
+    font-size: clamp(30px, 9vw, 46px);
   }
 
   .service-grid {
