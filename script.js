@@ -17,7 +17,7 @@ const blogPostsContainer = document.querySelector("[data-blog-posts]");
 const cookieBanner = document.querySelector("[data-cookie-banner]");
 const cookieAccept = document.querySelector("[data-cookie-accept]");
 const cookieDecline = document.querySelector("[data-cookie-decline]");
-const isServicePage = Boolean(document.querySelector(".service-page"));
+const isHomePage = Boolean(document.querySelector("#work"));
 
 if (loader) {
   document.body.classList.add("is-loading");
@@ -975,7 +975,7 @@ const setupMobileMenu = () => {
     return;
   }
 
-  const sectionHref = (anchor) => `${isServicePage ? "index.html" : ""}${anchor}`;
+  const sectionHref = (anchor) => `${isHomePage ? "" : "index.html"}${anchor}`;
 
   const toggle = document.createElement("button");
   toggle.className = "mobile-menu-toggle";
