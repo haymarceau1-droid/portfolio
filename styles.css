@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Englebert&display=swap");
 
 :root {
   --background: #f7f7f5;
@@ -361,7 +361,7 @@ h3 {
 .service-kicker {
   margin-bottom: 24px;
   color: var(--primary);
-  font-family: "Caveat", "DM Sans", sans-serif;
+  font-family: "Englebert", "DM Sans", sans-serif;
   font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 600;
   letter-spacing: 0;
@@ -1286,7 +1286,7 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
 .eyebrow {
   margin-bottom: 22px;
   color: var(--primary);
-  font-family: "Caveat", "DM Sans", sans-serif;
+  font-family: "Englebert", "DM Sans", sans-serif;
   font-size: clamp(21px, 2vw, 28px);
   font-weight: 600;
   letter-spacing: 0;
