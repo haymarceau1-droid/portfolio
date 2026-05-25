@@ -1264,7 +1264,7 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
   min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
-  padding-top: clamp(82px, 9vw, 128px);
+  padding: clamp(56px, 7vw, 96px) 0 clamp(56px, 7vw, 96px);
 }
 
 .hero-grid {
@@ -2843,7 +2843,7 @@ dd {
   .hero {
     min-height: auto;
     align-items: start;
-    padding-top: 76px;
+    padding: 56px 0 48px;
   }
 
   h1 {
