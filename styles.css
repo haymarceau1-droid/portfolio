@@ -119,7 +119,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: -0.02em;
@@ -131,7 +131,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
 }
 
 body::before {
@@ -177,7 +177,7 @@ body::before {
 
 .loader-name {
   display: block;
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(44px, 8vw, 118px);
   font-weight: 500;
   line-height: 0.95;
@@ -359,7 +359,7 @@ h3 {
 .service-kicker {
   margin-bottom: 24px;
   color: var(--primary);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 400;
   letter-spacing: 0;
@@ -563,7 +563,7 @@ h3 {
   background: var(--primary);
   border-bottom: 1px solid color-mix(in srgb, var(--primary) 82%, white);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
   text-align: center;
 }
@@ -588,7 +588,7 @@ h3 {
 
 .brand {
   justify-self: start;
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -763,7 +763,7 @@ h3 {
   margin-top: 0;
   max-width: 340px;
   color: var(--foreground);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.02;
@@ -890,7 +890,7 @@ h3 {
 
 .mega-menu-item strong {
   color: var(--foreground);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.05;
@@ -950,7 +950,7 @@ h3 {
 .mega-feature strong {
   position: relative;
   max-width: 190px;
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: 26px;
   font-weight: 500;
   line-height: 1;
@@ -1067,7 +1067,7 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
   align-items: center;
   justify-content: space-between;
   padding: 15px 14px;
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-size: 22px;
   font-weight: 500;
 }
@@ -1076,7 +1076,7 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
 .mobile-service-link::after {
   content: "->";
   color: var(--soft);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0;
@@ -1284,7 +1284,7 @@ body.is-mobile-menu-open .mobile-menu-toggle-lines::after {
 .eyebrow {
   margin-bottom: 22px;
   color: var(--primary);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(21px, 2vw, 28px);
   font-weight: 400;
   letter-spacing: 0;
@@ -1331,7 +1331,7 @@ body.is-write-title-ready .write-title-char {
   max-width: 920px;
   margin-top: clamp(18px, 3vw, 34px);
   color: var(--charcoal);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(30px, 4.8vw, 68px);
   font-weight: 500;
   line-height: 0.96;
@@ -1594,18 +1594,11 @@ body.is-write-title-ready .write-title-char {
 }
 
 .france-flag {
-  display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: inline-block;
   width: 18px;
   height: 12px;
   overflow: hidden;
-  background:
-    linear-gradient(
-      90deg,
-      #273f74 0 33.33%,
-      #f7f7f5 33.33% 66.66%,
-      #9f2f2f 66.66% 100%
-    );
+  background: url("FR.png") center / cover no-repeat;
   border: 1px solid color-mix(in srgb, var(--foreground) 18%, transparent);
   border-radius: 2px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.22) inset;
@@ -1955,7 +1948,7 @@ h3 {
   align-items: center;
   gap: 14px;
   color: var(--foreground);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(21px, 2vw, 28px);
   font-weight: 500;
   line-height: 1.08;
@@ -2261,7 +2254,7 @@ dd {
 }
 
 .skill-logo {
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0;
@@ -2423,7 +2416,7 @@ dd {
 
 .contact-profile-copy strong {
   color: var(--surface);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(28px, 3vw, 38px);
   font-weight: 500;
   line-height: 0.96;
@@ -2493,7 +2486,7 @@ dd {
   bottom: -0.18em;
   z-index: 0;
   color: var(--surface);
-  font-family: "Clash Grotesk", Arial, sans-serif;
+  font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: clamp(86px, 18vw, 260px);
   font-weight: 500;
   line-height: 0.78;
