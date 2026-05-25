@@ -661,23 +661,27 @@ h3 {
 }
 
 .mega-menu {
-  position: absolute;
-  top: calc(100% + 24px);
-  left: 50%;
+  position: fixed;
+  top: 88px;
+  left: 0;
+  right: 0;
   z-index: 25;
   display: grid;
-  grid-template-columns: minmax(230px, 0.62fr) minmax(430px, 1fr) minmax(220px, 0.54fr);
-  gap: 18px;
-  width: min(1040px, calc(100vw - 40px));
-  padding: 18px;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.4fr) minmax(240px, 0.65fr);
+  gap: clamp(18px, 2.5vw, 34px);
+  width: auto;
+  min-height: 360px;
+  padding: clamp(28px, 3.6vw, 56px) var(--pad);
   color: var(--foreground);
   background: var(--popover);
   border: 1px solid var(--border);
-  border-radius: calc(var(--radius) + 8px);
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0 0 calc(var(--radius) + 12px) calc(var(--radius) + 12px);
   box-shadow: 0 28px 90px rgba(60, 37, 23, 0.18);
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(-50%, 14px, 0) scale(0.975);
+  transform: translate3d(0, 14px, 0) scale(0.985);
   transform-origin: top center;
   --mega-x: 50%;
   --mega-y: 50%;
@@ -691,7 +695,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 1px;
-  border-radius: calc(var(--radius) + 7px);
+  border-radius: 0 0 calc(var(--radius) + 11px) calc(var(--radius) + 11px);
   pointer-events: none;
   background: color-mix(in srgb, var(--primary) 3%, transparent);
   opacity: 0;
@@ -705,7 +709,7 @@ h3 {
 .nav-services.is-open .mega-menu {
   opacity: 1;
   pointer-events: auto;
-  transform: translate3d(-50%, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .mega-menu::before {
@@ -725,8 +729,8 @@ h3 {
   position: relative;
   display: grid;
   align-content: space-between;
-  min-height: 272px;
-  padding: 20px;
+  min-height: 300px;
+  padding: clamp(24px, 2.4vw, 34px);
   background: var(--secondary);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -759,7 +763,7 @@ h3 {
 
 .mega-menu-title {
   margin-top: 0;
-  max-width: 260px;
+  max-width: 340px;
   color: var(--foreground);
   font-family: "Clash Grotesk", "DM Sans", Arial, sans-serif;
   font-size: 28px;
@@ -768,7 +772,7 @@ h3 {
 }
 
 .mega-menu-intro p:not(.eyebrow):not(.mega-menu-title) {
-  max-width: 250px;
+  max-width: 310px;
   color: var(--muted-foreground);
   font-size: 14px;
   line-height: 1.45;
@@ -777,16 +781,16 @@ h3 {
 .mega-menu-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  gap: clamp(12px, 1.6vw, 22px);
 }
 
 .mega-menu-item {
   position: relative;
   display: flex;
-  gap: 14px;
-  min-height: 132px;
+  gap: 18px;
+  min-height: 142px;
   align-items: flex-start;
-  padding: 16px;
+  padding: clamp(18px, 2vw, 26px);
   color: var(--foreground);
   background: transparent;
   border: 1px solid transparent;
@@ -904,10 +908,10 @@ h3 {
 .mega-feature {
   position: relative;
   display: grid;
-  min-height: 272px;
+  min-height: 300px;
   align-content: end;
-  gap: 12px;
-  padding: 20px;
+  gap: 14px;
+  padding: clamp(24px, 2.4vw, 34px);
   overflow: hidden;
   color: var(--foreground);
   background: var(--secondary);
